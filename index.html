@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img class="website-logo" src="https://res.cloudinary.com/dky69roxl/image/upload/v1695817869/logo_9_2_tcrut1.png" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#">Product</a>
+                <a class="nav-link" href="#">Personal Care</a>
+                <a class="nav-link" href="#">Welness</a>
+                <a class="nav-link" href="#">Legal</a>
+            </div>
+            <div class="header-container">
+                <div class="search-container">
+                    <a href="#"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M17.6715 16.0839L14.1874 12.5986C16.7944 9.11501 16.0835 4.17776 12.5996 1.57096C9.11577 -1.03583 4.17811 -0.325041 1.5711 3.15854C-1.03592 6.64213 -0.325068 11.5794 3.15881 14.1862C5.95734 16.2802 9.80107 16.2802 12.5996 14.1862L16.0853 17.6715C16.5233 18.1095 17.2335 18.1095 17.6715 17.6715C18.1095 17.2335 18.1095 16.5234 17.6715 16.0854L17.6715 16.0839ZM7.90827 13.5135C4.81197 13.5135 2.30195 11.0037 2.30195 7.90761C2.30195 4.81157 4.81197 2.30176 7.90827 2.30176C11.0046 2.30176 13.5146 4.81157 13.5146 7.90761C13.5113 11.0023 11.0032 13.5102 7.90827 13.5135Z" fill="#393939" />
+                        </svg></a>
+                </div>
+                <div class="icons-container">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook icon" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x icon" viewBox="0 0 16 16">
+                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+                        </svg></a>
+                    <a href="#"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <g clip-path="url(#clip0_138_185)">
+                                <path d="M7 1.26117C8.869 1.26117 9.09067 1.26817 9.82858 1.302C10.5916 1.337 11.3773 1.51083 11.9333 2.06675C12.4944 2.62792 12.663 3.40608 12.698 4.17142C12.7318 4.90933 12.7388 5.131 12.7388 7C12.7388 8.869 12.7318 9.09067 12.698 9.82858C12.6636 10.5875 12.4857 11.3808 11.9333 11.9333C11.3721 12.4944 10.5945 12.663 9.82858 12.698C9.09067 12.7318 8.869 12.7388 7 12.7388C5.131 12.7388 4.90933 12.7318 4.17142 12.698C3.41833 12.6636 2.6145 12.4816 2.06675 11.9333C1.5085 11.375 1.337 10.5893 1.302 9.82858C1.26817 9.09067 1.26117 8.869 1.26117 7C1.26117 5.131 1.26817 4.90933 1.302 4.17142C1.33642 3.41542 1.51608 2.61742 2.06675 2.06675C2.62675 1.50675 3.40783 1.337 4.17142 1.302C4.90933 1.26817 5.131 1.26117 7 1.26117ZM7 0C5.09892 0 4.86033 0.00816667 4.11367 0.042C3.03158 0.0915833 1.95708 0.392583 1.17483 1.17483C0.389667 1.96 0.0915833 3.03217 0.042 4.11367C0.00816667 4.86033 0 5.09892 0 7C0 8.90108 0.00816667 9.13967 0.042 9.88633C0.0915833 10.9672 0.39375 12.0447 1.17483 12.8252C1.95942 13.6097 3.03333 13.9084 4.11367 13.958C4.86033 13.9918 5.09892 14 7 14C8.90108 14 9.13967 13.9918 9.88633 13.958C10.9678 13.9084 12.0435 13.6068 12.8252 12.8252C13.6109 12.0394 13.9084 10.9678 13.958 9.88633C13.9918 9.13967 14 8.90108 14 7C14 5.09892 13.9918 4.86033 13.958 4.11367C13.9084 3.03158 13.6068 1.9565 12.8252 1.17483C12.0417 0.391417 10.9649 0.091 9.88633 0.042C9.13967 0.00816667 8.90108 0 7 0Z" fill="#393939" />
+                                <path d="M7.00075 3.40558C5.01567 3.40558 3.40625 5.015 3.40625 7.00008C3.40625 8.98516 5.01567 10.5946 7.00075 10.5946C8.98583 10.5946 10.5953 8.98516 10.5953 7.00008C10.5953 5.015 8.98583 3.40558 7.00075 3.40558ZM7.00075 9.33341C5.71217 9.33341 4.66742 8.28866 4.66742 7.00008C4.66742 5.7115 5.71217 4.66675 7.00075 4.66675C8.28933 4.66675 9.33408 5.7115 9.33408 7.00008C9.33408 8.28866 8.28933 9.33341 7.00075 9.33341Z" fill="#393939" />
+                                <path d="M10.7365 4.10316C11.2004 4.10316 11.5765 3.72708 11.5765 3.26316C11.5765 2.79924 11.2004 2.42316 10.7365 2.42316C10.2726 2.42316 9.89648 2.79924 9.89648 3.26316C9.89648 3.72708 10.2726 4.10316 10.7365 4.10316Z" fill="#393939" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_138_185">
+                                    <rect width="14" height="14" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                </div>
+                <div class="store-container">
+                    <a href="#"><svg class="store-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <g clip-path="url(#clip0_138_170)">
+                                <path d="M17.0347 3.05775C16.8238 2.80458 16.5597 2.60096 16.2612 2.46136C15.9626 2.32176 15.637 2.2496 15.3075 2.25H3.1815L3.15 1.98675C3.08554 1.43956 2.82254 0.935049 2.41087 0.568858C1.9992 0.202667 1.46747 0.000256345 0.9165 0L0.75 0C0.551087 0 0.360322 0.0790176 0.21967 0.21967C0.0790176 0.360322 0 0.551088 0 0.75C0 0.948912 0.0790176 1.13968 0.21967 1.28033C0.360322 1.42098 0.551087 1.5 0.75 1.5H0.9165C1.1002 1.50002 1.2775 1.56747 1.41478 1.68954C1.55205 1.81161 1.63976 1.97981 1.66125 2.16225L2.69325 10.9373C2.80039 11.8498 3.23886 12.6913 3.92543 13.302C4.612 13.9127 5.49889 14.25 6.41775 14.25H14.25C14.4489 14.25 14.6397 14.171 14.7803 14.0303C14.921 13.8897 15 13.6989 15 13.5C15 13.3011 14.921 13.1103 14.7803 12.9697C14.6397 12.829 14.4489 12.75 14.25 12.75H6.41775C5.95354 12.7487 5.5011 12.6038 5.12245 12.3353C4.7438 12.0668 4.45748 11.6877 4.30275 11.25H13.2427C14.122 11.2501 14.9732 10.9412 15.6479 10.3773C16.3225 9.81348 16.7775 9.03052 16.9335 8.16525L17.5222 4.89975C17.581 4.57576 17.5678 4.2428 17.4836 3.92448C17.3993 3.60616 17.2461 3.31026 17.0347 3.05775Z" fill="#393939" />
+                                <path d="M5.25098 17.9999C6.0794 17.9999 6.75098 17.3284 6.75098 16.4999C6.75098 15.6715 6.0794 14.9999 5.25098 14.9999C4.42255 14.9999 3.75098 15.6715 3.75098 16.4999C3.75098 17.3284 4.42255 17.9999 5.25098 17.9999Z" fill="#393939" />
+                                <path d="M12.75 18C13.5784 18 14.25 17.3284 14.25 16.5C14.25 15.6716 13.5784 15 12.75 15C11.9216 15 11.25 15.6716 11.25 16.5C11.25 17.3284 11.9216 18 12.75 18Z" fill="#393939" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_138_170">
+                                    <rect width="18" height="18" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg></a>
+                </div>
+                <div class="button-container">
+                    <button type="button" class="genelogy-button">
+                        Genology
+                    </button>
+                    <button type="button" class="login-button">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="https://res.cloudinary.com/dky69roxl/video/upload/v1695817410/BACKGROUND_inmqxb.mp4" type="video/mp4" />
+        </video>
+        <div class="text-overlay">
+            <p>01.PRODUCT NAME</p>
+            <h2>SCIENCE OF TRANSFORMING LIVES</h2>
+            <button type="button" class="know-more-button">
+                Know More
+            </button>
+            <div class="arrow">
+                <button class="left-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M11.0303 8.53033C11.3232 8.23744 11.3232 7.76256 11.0303 7.46967C10.7374 7.17678 10.2626 7.17678 9.96967 7.46967L5.96967 11.4697C5.82322 11.6161 5.75 11.8081 5.75 12C5.75 12.1017 5.77024 12.1987 5.80691 12.2871C5.84351 12.3755 5.89776 12.4584 5.96967 12.5303L9.96967 16.5303C10.2626 16.8232 10.7374 16.8232 11.0303 16.5303C11.3232 16.2374 11.3232 15.7626 11.0303 15.4697L8.31066 12.75H18C18.4142 12.75 18.75 12.4142 18.75 12C18.75 11.5858 18.4142 11.25 18 11.25H8.31066L11.0303 8.53033Z" fill="white" />
+                    </svg>
+                </button>
+                <button class="right-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M13.4697 8.53033C13.1768 8.23744 13.1768 7.76256 13.4697 7.46967C13.7626 7.17678 14.2374 7.17678 14.5303 7.46967L18.5303 11.4697C18.8232 11.7626 18.8232 12.2374 18.5303 12.5303L14.5303 16.5303C14.2374 16.8232 13.7626 16.8232 13.4697 16.5303C13.1768 16.2374 13.1768 15.7626 13.4697 15.4697L16.1893 12.75H6.5C6.08579 12.75 5.75 12.4142 5.75 12C5.75 11.5858 6.08579 11.25 6.5 11.25H16.1893L13.4697 8.53033Z" fill="white" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="about-us-section">
+        <img src="https://res.cloudinary.com/dky69roxl/image/upload/v1695883069/shape_1_ry1zvu.png" alt="about us logo" class="about-us-image" />
+        <div class="about-us-container">
+            <h3 class="about-us-heading">ABOUT US</h3>
+            <h1 class="our-story about-us-heading">OUR STORY</h1>
+            <p class="about-description">The <span class="span-text">VICTOUS Mission</span> Family creates positive impact in the world by helping people look and feel young, while empowering each other to unleash our potential.</p>
+            <p class="about-description">In 2020, <span class="span-text">VICTOUS Vision</span> experienced double-digit growth across world regions, ranging from 12% to 42%. This growth was achieved despite the COVID-19 pandemic forcing the company to virtually stream hundreds of events and move approximately 775 employees to remote work.<br />
+                Jeunesse has been recognized with more than 30 growth-related awards, including five consecutive years ranking on the Inc. 5000 Fastest Growing Companies in America and ranking among the Top 20 companies on the Direct Selling News Global 100 list since 2016.
+            </p>
+            <button type="button" class="know-more-button">
+                KNOW MORE
+            </button>
+        </div>
+    </div>
+    <div class="featured-products-section">
+        <div class="featured-content">
+            <h3 class="featured-heading">FEATURED PRODUCTS</h3>
+            <h1 class="featured-description">LUMINESCE Cellular Rejuvenation Serum</h1>
+            <p class="price">Rs 6,999</p>
+            <button type="button" class="buy-now-button">
+                BUY NOW
+            </button>
+        </div>
+        <img src="https://res.cloudinary.com/dky69roxl/image/upload/v1695884875/image_1_y4jcku.png" alt="featured icon" class="featured-image" />
+    </div>
+    <div class="wellness-section">
+        <div class="wellness-heading-container">
+            <h2 class="featured-description">STORY OF WELLNESS</h2>
+            <button type="button" class="know-more-button">
+                Know More
+            </button>
+        </div>
+    </div>
+    <div class="personal-care-section">
+        <div class="image-container">
+            <img class="image-container" src="https://res.cloudinary.com/dky69roxl/image/upload/v1695893734/ai-cloud-concept-with-robot-arm_2_aopxye.png" alt="ai cloud" />
+        </div>
+        <div class="personal-care-container">
+            <h1 class="personal-care-heading">GIVE A BOOST TO YOUR MENTAL HEALTH</h1>
+            <p class="personal-care-description">Wellness lies in everyone’s hand!</p>
+            <button type="button" class="register-now-button">
+                Register Now
+            </button>
+        </div>
+    </div>
+    <div class="legal-section">
+        <div>
+            <div class="profile-container">
+                <div class="review-container">
+                    <img src="https://res.cloudinary.com/dky69roxl/image/upload/v1695896610/Image_lv1n12.png" alt="profile" class="profile" />
+                    <div style="margin-left: 20px">
+                        <p class="name">Mathew</p>
+                        <span>
+                            <svg style="color:#FD7E14" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </span>
+                        <span>
+                            <svg style="color:#FD7E14" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </span>
+                        <span>
+                            <svg style="color:#FD7E14" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </span>
+                        <span>
+                            <svg style="color:#FD7E14" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </span>
+                        <span>
+                            <svg style="color:#FD7E14" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <p class="review">“Very well products in this prices, where you will get full result. Very pleased with the purchase.”</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section">
+        <div class="footer-header-container">
+            <img class="website-logo" src="https://res.cloudinary.com/dky69roxl/image/upload/v1695817869/logo_9_2_tcrut1.png" />
+            <ul class="footer-items">
+                <li class="mr-3">About Us</li>
+                <li class="mr-3">Products</li>
+                <li class="mr-3">Blogs</li>
+                <li class="mr-3">Contact Us</li>
+            </ul>
+            <div class="footer-social-icons">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook social-icon" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram social-icon" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube social-icon" viewBox="0 0 16 16">
+                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom-conatiner">
+            <ul class="footer-bottom-items">
+                <li class="list-item">Terms & Privacy Policy</li>
+                <li class="list-item">Disclaimer</li>
+                <li class="list-item">Shipping Policy</li>
+                <li class="list-item">Refund Policy</li>
+            </ul>
+            <ul class="footer-bottom-items">
+                <li class="list-item">&copy; Victous - All rights reserved.</li>
+                <li class="list-item">Designed & Developed by</li>
+                <img src="https://res.cloudinary.com/dky69roxl/image/upload/v1695901162/Prodigit_logo_2_lme4kf.png" alt="website icon" class="website-icon" />
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
